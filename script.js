@@ -48,7 +48,7 @@ document.getElementById("contactForm").addEventListener("submit", event => {
     `Requirement: ${message}`
   ].filter(Boolean).join("\n");
 
-  const whatsappUrl = `https://wa.me/918130341155?text=${encodeURIComponent(text)}`;
+  const whatsappUrl = `https://wa.me/917302614061?text=${encodeURIComponent(text)}`;
   window.open(whatsappUrl, "_blank", "noopener");
   document.getElementById("formStatus").textContent = "WhatsApp opened with your enquiry. Please press Send in WhatsApp.";
 });
