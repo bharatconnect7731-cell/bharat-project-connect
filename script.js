@@ -1,56 +1,30 @@
-// Bharat Project Connect — navigation and enquiry interactions
-const menuToggle = document.getElementById("menuToggle");
-const nav = document.getElementById("nav");
-
-menuToggle.addEventListener("click", () => {
-  const isOpen = nav.classList.toggle("open");
-  menuToggle.setAttribute("aria-expanded", String(isOpen));
+const BPC_PHONE = "917302614061";
+const BPC_EMAIL = "bharatconnect7731@gmail.com";
+// After deploying Google Apps Script, paste its Web App URL below.
+const ENQUIRY_API_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+document.addEventListener("DOMContentLoaded",()=>{
+ const toggle=document.querySelector(".menu-toggle"),nav=document.querySelector(".navlinks");
+ if(toggle&&nav) toggle.addEventListener("click",()=>nav.classList.toggle("open"));
+ document.querySelectorAll("[data-phone]").forEach(el=>el.textContent="7302614061");
+ document.querySelectorAll("[data-email]").forEach(el=>el.textContent=BPC_EMAIL);
+ document.querySelectorAll(".enquiry-form").forEach(form=>{
+   form.addEventListener("submit",async e=>{
+    e.preventDefault();
+    const status=form.querySelector(".form-status");
+    const data=Object.fromEntries(new FormData(form).entries());
+    data.page=location.pathname;
+    if(!data.name||!data.phone||!data.service){status.textContent="Please complete your name, phone number and service.";return;}
+    if(ENQUIRY_API_URL.startsWith("PASTE_")){
+      status.textContent="The enquiry form is ready. The owner must connect the Google Sheets backend before live submissions can be stored.";
+      return;
+    }
+    const btn=form.querySelector('button[type="submit"]'); if(btn){btn.disabled=true;btn.textContent="Sending...";}
+    try{
+      await fetch(ENQUIRY_API_URL,{method:"POST",mode:"no-cors",headers:{"Content-Type":"application/x-www-form-urlencoded;charset=UTF-8"},body:new URLSearchParams(data).toString()});
+      status.textContent="Thank you! Your enquiry has been submitted. Our team will contact you.";
+      form.reset();
+    }catch(err){status.textContent="Unable to submit right now. Please contact us on WhatsApp or email.";}
+    finally{if(btn){btn.disabled=false;btn.textContent="Submit Enquiry";}}
+   });
+ });
 });
-
-nav.querySelectorAll("a").forEach(link => {
-  link.addEventListener("click", () => {
-    nav.classList.remove("open");
-    menuToggle.setAttribute("aria-expanded", "false");
-  });
-});
-
-// Service cards pre-select the matching service in the enquiry form.
-document.querySelectorAll("[data-service]").forEach(link => {
-  link.addEventListener("click", () => {
-    const select = document.getElementById("serviceSelect");
-    select.value = link.dataset.service;
-  });
-});
-
-// The form creates a WhatsApp message. It does not store or transmit data itself.
-document.getElementById("contactForm").addEventListener("submit", event => {
-  event.preventDefault();
-  const form = new FormData(event.currentTarget);
-  const name = String(form.get("name") || "").trim();
-  const phone = String(form.get("phone") || "").trim();
-  const email = String(form.get("email") || "").trim();
-  const service = String(form.get("service") || "").trim();
-  const message = String(form.get("message") || "").trim();
-
-  if (!name || !phone || !service || !message) {
-    document.getElementById("formStatus").textContent = "Please complete all required fields.";
-    return;
-  }
-
-  const text = [
-    "Hello Bharat Project Connect,",
-    "",
-    "I would like to make an enquiry.",
-    `Name: ${name}`,
-    `Phone: ${phone}`,
-    email ? `Email: ${email}` : "",
-    `Service: ${service}`,
-    `Requirement: ${message}`
-  ].filter(Boolean).join("\n");
-
-  const whatsappUrl = `https://wa.me/917302614061?text=${encodeURIComponent(text)}`;
-  window.open(whatsappUrl, "_blank", "noopener");
-  document.getElementById("formStatus").textContent = "WhatsApp opened with your enquiry. Please press Send in WhatsApp.";
-});
-
-document.getElementById("year").textContent = new Date().getFullYear();
