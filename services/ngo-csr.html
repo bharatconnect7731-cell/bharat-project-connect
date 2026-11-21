@@ -4,261 +4,179 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Professional BPO Solutions by Bharat Project Connect. Customer support, telecalling, back-office and data management services.">
-<title>BPO Solutions | Bharat Project Connect</title>
+<meta name="description" content="NGO and CSR consultancy, documentation, LOI and project proposal support by Bharat Project Connect across India.">
+<title>NGO & CSR Consultancy | Bharat Project Connect</title>
 <link rel="stylesheet" href="../style.css">
-
 <style>
-.bpo-hero {
-  background: linear-gradient(125deg,#07172f,#103d70 65%,#087f9b);
-  padding:85px 0;
-  color:white;
-  position:relative;
-  overflow:hidden;
-}
-.bpo-hero h1 {font-size:clamp(38px,5vw,58px);line-height:1.12;color:white;max-width:750px;margin:18px 0}
-.bpo-hero p {color:#d5e9f7;font-size:17px;max-width:680px;line-height:1.8}
-.bpo-tag {color:#72e5f2;font-weight:700;letter-spacing:2px;font-size:13px}
-.bpo-hero-grid {display:grid;grid-template-columns:1.4fr .8fr;gap:40px;align-items:center}
-.bpo-highlight {background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.18);border-radius:20px;padding:28px;backdrop-filter:blur(8px)}
-.bpo-highlight h3 {color:white;margin-bottom:20px}
-.bpo-point {display:flex;gap:12px;color:#e6f5ff;margin:17px 0;line-height:1.5}
-.bpo-check {color:#72e5f2;font-weight:bold}
-.bpo-stats {display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:38px}
-.bpo-stat {background:#ffffff12;border:1px solid #ffffff20;padding:17px;border-radius:13px}
-.bpo-stat strong {display:block;color:#72e5f2;font-size:21px}
-.bpo-stat span {font-size:12px;color:#d5e9f7}
-.bpo-cards {display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:35px}
-.bpo-card {background:white;border:1px solid #e5edf5;border-radius:17px;padding:26px;box-shadow:0 8px 28px #102d4b0b;transition:.25s}
-.bpo-card:hover {transform:translateY(-5px);box-shadow:0 15px 35px #102d4b18}
-.bpo-icon {width:48px;height:48px;border-radius:13px;background:#e7f8fc;color:#087f9b;display:grid;place-items:center;font-size:23px;margin-bottom:17px}
-.bpo-card h3 {color:#102d4b;margin-bottom:10px}
-.bpo-card p {color:#64748b;line-height:1.7;font-size:14px}
-.bpo-process {display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:32px}
-.bpo-step {padding:23px;background:white;border-radius:15px;border:1px solid #e3edf5}
-.bpo-step strong {font-size:27px;color:#0794b2}
-.bpo-step h3 {font-size:17px;color:#102d4b;margin:12px 0 8px}
-.bpo-step p {font-size:14px;color:#64748b;line-height:1.6}
-.bpo-cta {background:linear-gradient(110deg,#0b2850,#087f9b);border-radius:22px;padding:40px;color:white;display:flex;align-items:center;justify-content:space-between;gap:25px}
-.bpo-cta h2 {color:white;margin-bottom:10px}
-.bpo-cta p {color:#d7edf5}
-.bpo-cta .btn {background:#72e5f2;color:#08233f}
-.bpo-section {padding:65px 0}
-.bpo-muted {color:#64748b;line-height:1.8}
-@media(max-width:800px) {
- .bpo-hero-grid {grid-template-columns:1fr}
- .bpo-cards {grid-template-columns:repeat(2,1fr)}
- .bpo-process {grid-template-columns:repeat(2,1fr)}
-}
-@media(max-width:520px) {
- .bpo-cards,.bpo-process {grid-template-columns:1fr}
- .bpo-stats {grid-template-columns:1fr}
- .bpo-cta {display:block;padding:28px}
- .bpo-cta .btn {display:inline-block;margin-top:20px}
- .bpo-hero {padding:55px 0}
-}
+.ngo-hero{background:linear-gradient(125deg,#07172f,#103d70 65%,#087f9b);padding:85px 0;color:white}
+.ngo-grid{display:grid;grid-template-columns:1.4fr .8fr;gap:35px;align-items:center}
+.ngo-hero h1{font-size:clamp(38px,5vw,58px);line-height:1.12;color:white;margin:18px 0}
+.ngo-hero p{color:#d5e9f7;font-size:17px;line-height:1.8;max-width:690px}
+.ngo-tag{color:#72e5f2;font-size:13px;font-weight:700;letter-spacing:2px}
+.ngo-panel{background:#ffffff12;border:1px solid #ffffff30;border-radius:20px;padding:28px}
+.ngo-panel h3{color:white;margin-bottom:18px}
+.ngo-point{display:flex;gap:12px;color:#e6f5ff;margin:17px 0;line-height:1.6}
+.ngo-check{color:#72e5f2;font-weight:bold}
+.ngo-section{padding:65px 0}
+.ngo-muted{color:#64748b;line-height:1.8}
+.ngo-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:32px}
+.ngo-card{background:white;border:1px solid #e5edf5;border-radius:17px;padding:25px;box-shadow:0 8px 28px #102d4b0b;transition:.25s}
+.ngo-card:hover{transform:translateY(-5px);box-shadow:0 15px 35px #102d4b18}
+.ngo-icon{width:48px;height:48px;border-radius:13px;background:#e7f8fc;color:#087f9b;display:grid;place-items:center;font-size:23px;margin-bottom:17px}
+.ngo-card h3{color:#102d4b;margin-bottom:10px}
+.ngo-card p{color:#64748b;line-height:1.7;font-size:14px}
+.ngo-process{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:32px}
+.ngo-step{background:white;border:1px solid #e3edf5;border-radius:15px;padding:23px}
+.ngo-step strong{font-size:27px;color:#0794b2}
+.ngo-step h3{font-size:17px;color:#102d4b;margin:12px 0 8px}
+.ngo-step p{font-size:14px;color:#64748b;line-height:1.6}
+.ngo-cta{background:linear-gradient(110deg,#0b2850,#087f9b);border-radius:22px;padding:40px;color:white;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.ngo-cta h2{color:white;margin-bottom:10px}
+.ngo-cta p{color:#d7edf5}
+.ngo-cta .btn{background:#72e5f2;color:#08233f}
+@media(max-width:800px){.ngo-grid{grid-template-columns:1fr}.ngo-cards{grid-template-columns:repeat(2,1fr)}.ngo-process{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.ngo-cards,.ngo-process{grid-template-columns:1fr}.ngo-cta{display:block;padding:28px}.ngo-cta .btn{display:inline-block;margin-top:20px}.ngo-hero{padding:55px 0}}
 </style>
 </head>
-
 <body>
 
 <div class="topbar">
- <div class="container">
-  <span>Serving businesses and organisations across India</span>
-  <span>Call: <a href="tel:+917302614061">7302614061</a> | <a href="mailto:bharatconnect7731@gmail.com">bharatconnect7731@gmail.com</a></span>
- </div>
+<div class="container">
+<span>Supporting NGOs and CSR initiatives across India</span>
+<span>Call: <a href="tel:+917302614061">7302614061</a> | <a href="mailto:bharatconnect7731@gmail.com">bharatconnect7731@gmail.com</a></span>
+</div>
 </div>
 
 <header class="navbar">
- <div class="container navinner">
-  <a class="brand" href="../index.html">
-   <span class="brandmark">BPC</span>
-   <span>BHARAT PROJECT CONNECT<small>ONE PLATFORM. MULTIPLE BUSINESS SOLUTIONS.</small></span>
-  </a>
-  <button class="menu-toggle" aria-label="Open menu">☰</button>
-  <nav class="navlinks">
-   <a href="../index.html">Home</a>
-   <a href="../about.html">About</a>
-   <a href="../index.html#services">Services</a>
-   <a href="../contact.html">Contact</a>
-  </nav>
-  <a class="navcta" href="../enquiry.html">Get a Consultation</a>
- </div>
+<div class="container navinner">
+<a class="brand" href="../index.html">
+<span class="brandmark">BPC</span>
+<span>BHARAT PROJECT CONNECT<small>ONE PLATFORM. MULTIPLE BUSINESS SOLUTIONS.</small></span>
+</a>
+<button class="menu-toggle" aria-label="Open menu">☰</button>
+<nav class="navlinks">
+<a href="../index.html">Home</a>
+<a href="../about.html">About</a>
+<a href="../index.html#services">Services</a>
+<a href="../contact.html">Contact</a>
+</nav>
+<a class="navcta" href="../enquiry.html">Get a Consultation</a>
+</div>
 </header>
 
 <main>
 
-<section class="bpo-hero">
- <div class="container bpo-hero-grid">
-  <div>
-   <span class="bpo-tag">BUSINESS PROCESS OUTSOURCING</span>
-   <h1>Smarter BPO Support for Growing Businesses</h1>
-   <p>From customer communication to back-office operations, Bharat Project Connect helps businesses organise their processes, improve coordination and access flexible operational support.</p>
-   <div class="hero-actions" style="margin-top:28px">
-    <a class="btn" href="../enquiry.html?service=bpo-solutions">Discuss Your Requirement →</a>
-    <a class="btn secondary" href="#our-services">Explore Services</a>
-   </div>
-   <div class="bpo-stats">
-    <div class="bpo-stat"><strong>Customer</strong><span>Communication Support</span></div>
-    <div class="bpo-stat"><strong>Back Office</strong><span>Operational Assistance</span></div>
-    <div class="bpo-stat"><strong>Pan-India</strong><span>Business Coordination</span></div>
-   </div>
-  </div>
-
-  <div class="bpo-highlight">
-   <h3>How we support your business</h3>
-   <div class="bpo-point"><span class="bpo-check">✓</span><span>Flexible operational support based on your requirements</span></div>
-   <div class="bpo-point"><span class="bpo-check">✓</span><span>Customer calling and follow-up coordination</span></div>
-   <div class="bpo-point"><span class="bpo-check">✓</span><span>Data handling and back-office assistance</span></div>
-   <div class="bpo-point"><span class="bpo-check">✓</span><span>Clear communication and project coordination</span></div>
-  </div>
- </div>
+<section class="ngo-hero">
+<div class="container ngo-grid">
+<div>
+<span class="ngo-tag">NGO • CSR • SOCIAL IMPACT</span>
+<h1>Connecting Genuine NGOs with Meaningful CSR Opportunities</h1>
+<p>Bharat Project Connect supports NGOs, social organisations and CSR stakeholders through documentation guidance, project proposal support, partnership coordination and implementation-related assistance across India.</p>
+<div class="hero-actions" style="margin-top:28px">
+<a class="btn" href="../enquiry.html?service=ngo-csr">Discuss Your Project →</a>
+<a class="btn secondary" href="#ngo-services">Explore Our Services</a>
+</div>
+</div>
+<div class="ngo-panel">
+<h3>How we support NGOs</h3>
+<div class="ngo-point"><span class="ngo-check">✓</span><span>Documentation and application guidance</span></div>
+<div class="ngo-point"><span class="ngo-check">✓</span><span>LOI and project proposal assistance</span></div>
+<div class="ngo-point"><span class="ngo-check">✓</span><span>CSR opportunity identification and connections</span></div>
+<div class="ngo-point"><span class="ngo-check">✓</span><span>Project infrastructure and implementation coordination</span></div>
+</div>
+</div>
 </section>
 
-<section class="bpo-section" id="our-services">
- <div class="container">
-  <span class="kicker">OUR BPO SERVICES</span>
-  <h2>Operational Support That Works for You</h2>
-  <p class="bpo-muted">Choose the support your organisation needs. The scope can be discussed and planned according to your business operations.</p>
+<section class="ngo-section" id="ngo-services">
+<div class="container">
+<span class="kicker">OUR NGO & CSR SERVICES</span>
+<h2>Complete Support for Social Sector Projects</h2>
+<p class="ngo-muted">We help NGOs understand requirements, organise their documentation and explore suitable opportunities for project collaboration.</p>
 
-  <div class="bpo-cards">
-   <article class="bpo-card">
-    <div class="bpo-icon">☎</div>
-    <h3>Customer Support</h3>
-    <p>Customer communication, query handling coordination and service support for business operations.</p>
-   </article>
-   <article class="bpo-card">
-    <div class="bpo-icon">◎</div>
-    <h3>Telecalling & Follow-ups</h3>
-    <p>Outbound calling, lead follow-ups, enquiry coordination and customer communication support.</p>
-   </article>
-   <article class="bpo-card">
-    <div class="bpo-icon">▤</div>
-    <h3>Back-office Operations</h3>
-    <p>Administrative assistance, operational coordination and routine business process support.</p>
-   </article>
-   <article class="bpo-card">
-    <div class="bpo-icon">▦</div>
-    <h3>Data Entry & Management</h3>
-    <p>Data entry, spreadsheet management, record organisation and information handling support.</p>
-   </article>
-   <article class="bpo-card">
-    <div class="bpo-icon">✉</div>
-    <h3>Email & Documentation</h3>
-    <p>Email coordination, document preparation, reporting assistance and record management.</p>
-   </article>
-   <article class="bpo-card">
-    <div class="bpo-icon">⌘</div>
-    <h3>Process Coordination</h3>
-    <p>Workflow coordination, task tracking and communication between teams and stakeholders.</p>
-   </article>
-  </div>
- </div>
+<div class="ngo-cards">
+<article class="ngo-card"><div class="ngo-icon">▤</div><h3>NGO Documentation</h3><p>Support in organising organisational documents, profiles, project records and application-related information.</p></article>
+<article class="ngo-card"><div class="ngo-icon">✓</div><h3>Registration & Compliance Guidance</h3><p>Guidance on understanding relevant registration and compliance requirements, based on the organisation's needs.</p></article>
+<article class="ngo-card"><div class="ngo-icon">✎</div><h3>LOI & Proposal Support</h3><p>Assistance with Letters of Intent, project proposals, concept notes and application documentation.</p></article>
+<article class="ngo-card"><div class="ngo-icon">◇</div><h3>CSR Opportunity Identification</h3><p>Helping NGOs identify relevant CSR programmes, funding opportunities and partnership possibilities.</p></article>
+<article class="ngo-card"><div class="ngo-icon">♧</div><h3>CSR Partner Connections</h3><p>Connecting CSR stakeholders with NGOs working on relevant grassroots and community development initiatives.</p></article>
+<article class="ngo-card"><div class="ngo-icon">◎</div><h3>Project Implementation Support</h3><p>Coordination support for infrastructure, mobilisation, training, placement and other agreed project activities.</p></article>
+</div>
+</div>
 </section>
 
-<section class="bpo-section" style="background:#f2f7fb">
- <div class="container">
-  <span class="kicker">WHY WORK WITH US</span>
-  <h2>A Practical Approach to Business Operations</h2>
-  <p class="bpo-muted">We focus on understanding your requirements before discussing a suitable support model.</p>
-  <div class="bpo-cards">
-   <article class="bpo-card">
-    <h3>Flexible Support</h3>
-    <p>Discuss the activities and operational support that match your business needs.</p>
-   </article>
-   <article class="bpo-card">
-    <h3>Clear Coordination</h3>
-    <p>Defined responsibilities, communication and agreed working processes.</p>
-   </article>
-   <article class="bpo-card">
-    <h3>Requirement-led Planning</h3>
-    <p>Support options based on your expected workload, timelines and project scope.</p>
-   </article>
-  </div>
- </div>
+<section class="ngo-section" style="background:#f2f7fb">
+<div class="container">
+<span class="kicker">WHO WE SUPPORT</span>
+<h2>Building Connections Across the Social Sector</h2>
+<div class="ngo-cards">
+<article class="ngo-card"><h3>NGOs & Non-profits</h3><p>Organisations looking for documentation guidance, project opportunities and CSR partnership support.</p></article>
+<article class="ngo-card"><h3>CSR Heads & Companies</h3><p>Corporate stakeholders seeking to discover relevant NGOs and explore social impact partnerships.</p></article>
+<article class="ngo-card"><h3>Project Implementing Partners</h3><p>Organisations requiring coordination for infrastructure, mobilisation, training and placement activities.</p></article>
+</div>
+</div>
 </section>
 
-<section class="bpo-section">
- <div class="container">
-  <span class="kicker">OUR WORKING PROCESS</span>
-  <h2>Simple Steps. Clear Coordination.</h2>
-  <div class="bpo-process">
-   <article class="bpo-step">
-    <strong>01</strong>
-    <h3>Share Requirement</h3>
-    <p>Tell us about your business process and support needs.</p>
-   </article>
-   <article class="bpo-step">
-    <strong>02</strong>
-    <h3>Understand Scope</h3>
-    <p>We discuss expected activities, timelines and responsibilities.</p>
-   </article>
-   <article class="bpo-step">
-    <strong>03</strong>
-    <h3>Plan Support</h3>
-    <p>We discuss a suitable service arrangement and next steps.</p>
-   </article>
-   <article class="bpo-step">
-    <strong>04</strong>
-    <h3>Coordinate Work</h3>
-    <p>Agreed activities are coordinated with regular communication.</p>
-   </article>
-  </div>
- </div>
+<section class="ngo-section">
+<div class="container">
+<span class="kicker">OUR WORKING PROCESS</span>
+<h2>From Requirement to Partnership</h2>
+<div class="ngo-process">
+<article class="ngo-step"><strong>01</strong><h3>Share Your Requirement</h3><p>Tell us about your organisation, project and support needs.</p></article>
+<article class="ngo-step"><strong>02</strong><h3>Document Review</h3><p>We understand the available documents and relevant requirements.</p></article>
+<article class="ngo-step"><strong>03</strong><h3>Identify Opportunities</h3><p>We discuss relevant programmes, stakeholders and partnership options.</p></article>
+<article class="ngo-step"><strong>04</strong><h3>Coordinate Next Steps</h3><p>Agreed activities are coordinated with clear communication.</p></article>
+</div>
+</div>
 </section>
 
-<section class="bpo-section" style="padding-top:10px">
- <div class="container">
-  <div class="bpo-cta">
-   <div>
-    <h2>Looking for reliable BPO support?</h2>
-    <p>Tell us about your requirement. Let's discuss the right support for your business.</p>
-   </div>
-   <a class="btn" href="../enquiry.html?service=bpo-solutions">Submit an Enquiry →</a>
-  </div>
- </div>
+<section class="ngo-section" style="padding-top:10px">
+<div class="container">
+<div class="ngo-cta">
+<div>
+<h2>Looking for NGO or CSR project support?</h2>
+<p>Connect with Bharat Project Connect to discuss your requirements.</p>
+</div>
+<a class="btn" href="../enquiry.html?service=ngo-csr">Submit an Enquiry →</a>
+</div>
+</div>
 </section>
 
 </main>
 
 <footer class="footer">
- <div class="container">
-  <div class="footergrid">
-   <div>
-    <a class="brand" href="../index.html" style="color:white">
-     <span class="brandmark">BPC</span>
-     <span style="color:white">BHARAT PROJECT CONNECT<small style="color:#9bb4cc">ONE PLATFORM. MULTIPLE BUSINESS SOLUTIONS.</small></span>
-    </a>
-    <p>Connecting organisations, opportunities and practical business solutions across India.</p>
-   </div>
-   <div>
-    <h4>Our Services</h4>
-    <a href="ngo-csr.html">NGO & CSR Consultancy</a>
-    <a href="it-solutions.html">IT Solutions</a>
-    <a href="bpo-solutions.html">BPO Solutions</a>
-    <a href="import-export.html">Import & Export Solutions</a>
-   </div>
-   <div>
-    <h4>More Solutions</h4>
-    <a href="infrastructure.html">Infrastructure Solutions</a>
-    <a href="tender-rfp.html">Tender & RFP Solutions</a>
-    <a href="recruitment.html">Recruitment & Manpower</a>
-    <a href="business-consulting.html">Business Consulting</a>
-   </div>
-   <div>
-    <h4>Contact</h4>
-    <a href="tel:+917302614061">+91 7302614061</a>
-    <a href="mailto:bharatconnect7731@gmail.com">bharatconnect7731@gmail.com</a>
-    <a href="../enquiry.html">Submit an Enquiry</a>
-    <a href="../admin-info.html">Admin Dashboard Setup</a>
-   </div>
-  </div>
-  <div class="copyright">© 2026 Bharat Project Connect. All rights reserved.</div>
- </div>
+<div class="container">
+<div class="footergrid">
+<div>
+<a class="brand" href="../index.html" style="color:white">
+<span class="brandmark">BPC</span>
+<span style="color:white">BHARAT PROJECT CONNECT<small style="color:#9bb4cc">ONE PLATFORM. MULTIPLE BUSINESS SOLUTIONS.</small></span>
+</a>
+<p>Connecting genuine NGOs, CSR opportunities and practical project support across India.</p>
+</div>
+<div><h4>Our Services</h4>
+<a href="ngo-csr.html">NGO & CSR Consultancy</a>
+<a href="it-solutions.html">IT Solutions</a>
+<a href="bpo-solutions.html">BPO Solutions</a>
+<a href="import-export.html">Import & Export Solutions</a>
+</div>
+<div><h4>More Solutions</h4>
+<a href="infrastructure.html">Infrastructure Solutions</a>
+<a href="tender-rfp.html">Tender & RFP Solutions</a>
+<a href="recruitment.html">Recruitment & Manpower</a>
+<a href="business-consulting.html">Business Consulting</a>
+</div>
+<div><h4>Contact</h4>
+<a href="tel:+917302614061">+91 7302614061</a>
+<a href="mailto:bharatconnect7731@gmail.com">bharatconnect7731@gmail.com</a>
+<a href="../enquiry.html">Submit an Enquiry</a>
+<a href="../admin-info.html">Admin Dashboard Setup</a>
+</div>
+</div>
+<div class="copyright">© 2026 Bharat Project Connect. All rights reserved.</div>
+</div>
 </footer>
 
-<a class="whatsapp" href="https://wa.me/917302614061?text=Hello%20Bharat%20Project%20Connect%2C%20I%20need%20BPO%20support." target="_blank" rel="noopener">WhatsApp Us</a>
-
+<a class="whatsapp" href="https://wa.me/917302614061?text=Hello%20Bharat%20Project%20Connect%2C%20I%20need%20NGO%20and%20CSR%20support." target="_blank" rel="noopener">WhatsApp Us</a>
 <script src="../script.js"></script>
 </body>
 </html>
